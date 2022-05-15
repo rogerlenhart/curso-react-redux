@@ -1,4 +1,27 @@
+/*
+    PALETA DE CORES
+    Preto: #191A21
+    Cinza escuro: #21222C
+    Cinza: #282A36
+    Azul escuro: #0B7DB7
+    Azul claro: #00BCD4
+    Amarelo: #FFB703
+    Laranja: #FB8500
+*/
+
 body {
-    background-color: #222;
+    background-color: #191A21;
     color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+h1, h2, strong {
+    font-weight: 400;
+}
+
+h2{
+    margin: 0;
 }

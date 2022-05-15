@@ -1,10 +1,9 @@
 import React from 'react'
 
 export default function Primeiro() {
-    const msg = "Sejas bem vindo(a)!"
+    const msg = "Olá, React!"
     return (
         <div>
-            <h2>Primeiro Componente</h2>
             <p>{ msg }</p>
         </div>
     )
