@@ -6,6 +6,8 @@ import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
 
 import Card from './components/layout/Card'
 
@@ -16,7 +18,15 @@ export default () =>
         <h1>-=- Fundamentos React -=-</h1>
 
         <div className="Cards">
-            <Card titulo="#05 - Componente com Filhos" color='#00BCD4'>
+            <Card titulo="#07 - Desafio Repetição">
+                <TabelaProdutos/>
+            </Card>
+
+            <Card titulo="#06 - Repetição" color='#00BCD4'>
+                <ListaAlunos/>
+            </Card>
+
+            <Card titulo="#05 - Componente com Filhos" color='#CF68E4' >
                 <Familia sobrenome="Lenhart">
                     <FamiliaMembro nome="Róger" />
                     <FamiliaMembro nome="Elisabete" />
