@@ -1,3 +1,7 @@
 .Content {
-    
+    display: flex;
+    flex-grow: 1;
+    background-color: #D4F1F4;
+    color: #05445E;
+    padding: 30px;
 }
