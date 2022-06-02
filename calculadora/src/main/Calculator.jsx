@@ -27,6 +27,7 @@ export default class Calculator extends Component {
     }
 
     setOperation(operation) {
+        console.log(this.state)
         if(this.state.current === 0) {
             this.setState({ operation, current: 1, clearDisplay: true})
         } else {
@@ -35,7 +36,7 @@ export default class Calculator extends Component {
 
             const values = [...this.state.values]
             
-            let resultado = 0
+            let resultado = this.state.displayValue
             switch (currentOperation) {
                 case '+':
                     resultado = values[0] + values[1]
@@ -51,20 +52,21 @@ export default class Calculator extends Component {
                     break
             }
 
-            values[0] = resultado
+            values[0] = +(Math.round(resultado + "e+8")  + "e-8");
             values[1] = 0
 
             this.setState({
                 displayValue: values[0],
-                operation: equals ? null : operation,
+                operation: operation,
                 current: equals ? 0 : 1,
-                clearDisplay: !equals,
+                clearDisplay: true,
                 values
             })
         }
     }
 
     addDigit(n) {
+        console.log(this.state)
         if (n === '.' && this.state.displayValue.includes('.')) {
             return
         }
@@ -81,7 +83,7 @@ export default class Calculator extends Component {
             const values = [...this.state.values]
             values[i] = newValue
             this.setState({ values })
-            console.log(values)
+            
         }
     }
 
