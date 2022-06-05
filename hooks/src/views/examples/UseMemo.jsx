@@ -22,7 +22,6 @@ const UseMemo = (props) => {
                 subtitle="Retorna um valor memoizado!"
             />
 
-            <SectionTitle></SectionTitle>
             <div className="center">
                 <input type="number" className="input" 
                     value={n1} onChange={e => setN1(parseInt(e.target.value))}/>
