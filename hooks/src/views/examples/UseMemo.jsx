@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
-import SectionTitle from '../../components/layout/SectionTitle'
 
 function sum(a, b) {
     const future = Date.now() + 2000
