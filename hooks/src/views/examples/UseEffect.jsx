@@ -28,7 +28,7 @@ const UseEffect = (props) => {
     const [status, setStatus] = useState("Ímpar")
 
     useEffect(function() {
-        setStatus(number % 2 == 0 ? "Par" : "Ímpar")
+        setStatus(number % 2 === 0 ? "Par" : "Ímpar")
     }, [number])
 
     return (
