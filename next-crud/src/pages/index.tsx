@@ -1,3 +1,4 @@
+import Botao from "../components/Botao";
 import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 import Cliente from "../core/Cliente";
@@ -23,7 +24,9 @@ function clienteExcluido(cliente: Cliente){
       flex justify-center items-center h-screen
       bg-slate-900 text-white
     `}>
-      <Layout titulo="Cadastro Simples">
+      <Layout titulo="Cadastro Simples"
+        botao={<Botao>Novo Cliente</Botao>}
+      >
         <Tabela clientes={clientes}
           clienteSelecionado={clienteSelecionado}
           clienteExcluido={clienteExcluido}
